@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+            <div id="container">
+                <h1 id="title">Coffee Trio Studio</h1>
+                <p id="description" class="login">Thank you for taking the time to help us serve you better</p>
+
+                <form id="survey-form" action= "#">
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name </label><br>
+                        <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+                    </div>
+
+                    <div class="form-group" id="nan">
+                        <label id="email-label" for="email">email</label><br>
+                        <input id="email" type="text" name="email" placeholder="Enter your email" required><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age</label><br>
+                        <input id="number" type="number" name="number" placeholder="Enter your age" min="1" max="999"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="questions">How often do you drink coffee?</p> 
+                        <select id="dropdown">
+                            <option value="Daily">Daily</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Never">Never</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                    <p class="questions">When do you usually drink coffee?</p>
+                        <input type="radio" id="Morning" name="drink_time" value="Morning">
+                        <label for="Morning">Morning</label><br>
+                        <input type="radio" id="Afternoon" name="drink_time" value="Afternoon">
+                        <label for="Afternoon">Afternoon</label><br>
+                        <input type="radio" id="Evening" name="drink_time" value="Evening">
+                        <label for="Evening">Evening</label>
+                    </div>    
+
+                    <div class="form-group">
+                        <p class="questions"><label for="comments">Any other comments or suggestions?</label></p>
+                        <textarea id="comments" name="comments" placeholder="Enter your comment here"></textarea>
+                    </div>    
+
+                    <div class="form-group">
+                        <a href="index.html"><button id="submit"  onclick="a()">Submit</button></a>
+                    </div>    
+                </form>
+            </div>
+            <script>
+                function a(){
+
+                    // setTimeout(function() {
+                    //     window.location.href = "loading.html";
+                    // }, 1000);
+                    
+                        window.location.href = "index.html";
+                    
+                }
+                </script>
+    </body>
+</html>
