@@ -11,12 +11,12 @@ html {
     background-size: cover;
 }
 
-#container {
+.container {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
 }
 
-#survey-form {
+.survey-form {
     text-align: center;
     color: white;
     background: rgba(39, 36, 31, 0.8);
@@ -26,18 +26,18 @@ html {
     margin: auto;
 }
 
-#name, #email, #number {
+.name, .email, .number {
     display: block;
     width: 100%;
     padding: 5px;
 }
 
-#name-label, #email-label, #number-label {
+.name-label, .email-label, .number-label {
     font-size: 25px;
     padding: 20px;
 }
 
-#dropdown {
+.dropdown {
     padding: 5px;
 }
 
@@ -46,13 +46,13 @@ html {
     padding: 5px;
 }
 
-#comments {
+.comments {
     width: 600px;
     height: 60px;
 }
 .login{
     text-align: center;
 }
-#nan{
+.nan{
     display: none;
 }
